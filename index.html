@@ -9,15 +9,15 @@
     <script src="lib/jquery3.3.1.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>test</title>
 </head>
+
 <body>
     <header class="position-relative">
         <nav class="navbar navbar-expand navbar-dark bg-dark position-absolute">
             <a class="navbar-brand" href="#">Navigation</a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
                 <div class="my-toggler-icon">
                     <div></div>
                     <div></div>
@@ -62,22 +62,21 @@
     </main>
 
     <script>
-            let nav = document.querySelector('nav.navbar');
-            document.addEventListener("DOMContentLoaded", () => {
-                if (window.innerWidth <= 640) {
-                    nav.classList.remove('navbar-expand');
-                } else {
-                    nav.classList.add('navbar-expand');
-                }
-            })
-            window.addEventListener("resize", () => {
-                if (window.innerWidth <= 640) {
-                    nav.classList.remove('navbar-expand');
-                } else {
-                    nav.classList.add('navbar-expand');
-                } 
-            })
-            
-        </script>
+        let nav = document.querySelector('nav.navbar');
+        document.addEventListener("DOMContentLoaded", () => {
+            if (window.innerWidth <= 640) {
+                nav.classList.remove('navbar-expand');
+            } else {
+                nav.classList.add('navbar-expand');
+            }
+        })
+        window.addEventListener("resize", () => {
+            if (window.innerWidth <= 640) {
+                nav.classList.remove('navbar-expand');
+            } else {
+                nav.classList.add('navbar-expand');
+            } 
+        })
+    </script>
 </body>
 </html>
