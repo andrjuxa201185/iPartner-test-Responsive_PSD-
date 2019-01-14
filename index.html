@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <script src="lib/jquery3.3.1.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="position-relative">
+        <nav class="navbar navbar-expand navbar-dark bg-dark position-absolute">
+            <a class="navbar-brand" href="#">Navigation</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <div class="my-toggler-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">psd websites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ui kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">premium psd files</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="banner d-flex justify-content-start align-items-center">
+            <div class="wrapper-title">
+                <h2>Awesome Free PSD templates & Resources</h2>
+                <a href="#" class="d-flex justify-content-between align-items-center">
+                    <span>www.BlazRobar.com</span>
+                    <div class="arrow-r"></div>
+                </a>
+            </div>
+        </section>
+    </header>
+
+    <main style="height: 1000px">
+
+    </main>
+
+    <script>
+            let nav = document.querySelector('nav.navbar');
+            document.addEventListener("DOMContentLoaded", () => {
+                if (window.innerWidth <= 640) {
+                    nav.classList.remove('navbar-expand');
+                } else {
+                    nav.classList.add('navbar-expand');
+                }
+            })
+            window.addEventListener("resize", () => {
+                if (window.innerWidth <= 640) {
+                    nav.classList.remove('navbar-expand');
+                } else {
+                    nav.classList.add('navbar-expand');
+                } 
+            })
+            
+        </script>
+</body>
+</html>
