@@ -256,3 +256,40 @@ header{
 
 /* FOTO */
 
+.row-images .col-md-4{
+    padding: 0;
+}
+.row-images .img{
+    overflow: hidden;
+    background-color: #5b0fa1;
+    position: relative;
+}
+.row-images .img a{
+    background-color: #5b0fa1;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.row-images .img img{
+    width: 100%;
+}
+
+.row-images .img:hover a{
+   visibility: visible;
+}
+
+
+@media (max-width: 320px) {
+    .row-images .arrow-r{
+        width: 12px;
+        height: 12px;
+    }
+    .row-images .arrow-r::after{
+        border-right: solid 3px white;
+        border-bottom: solid 3px white;
+    }
+}
